@@ -1,0 +1,158 @@
+/* USE MELIÁ – style.css */
+
+:root {
+  --dourado: #B8924A;
+  --texto: #2C1F0E;
+  --texto-suave: #7A6A55;
+  --fundo: #FAF7F2;
+  --fundo-claro: #F0EBE3;
+  --borda: #E2D9CC;
+  --fonte-display: 'Georgia', serif;
+  --fonte-corpo: system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--fundo); color: var(--texto); font-family: var(--fonte-corpo); font-size: 1rem; line-height: 1.65; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+
+/* CABEÇALHO */
+.cabecalho {
+  background: white;
+  border-bottom: 1px solid var(--borda);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.cabecalho-interno {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+nav { display: flex; gap: 2rem; }
+.link-nav {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--texto);
+  transition: color 0.2s;
+}
+.link-nav:hover { color: var(--dourado); }
+
+/* LOGO */
+.logo { display: inline-flex; align-items: baseline; gap: 3px; }
+.logo-use { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--texto-suave); }
+.logo-melia { font-family: var(--fonte-display); font-size: 1.7rem; color: var(--texto); letter-spacing: 0.05em; }
+
+/* HERO */
+.hero {
+  min-height: 85vh;
+  background: #e8ddd0 url(/img/top_preto.jpeg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(250,247,242,0.9) 40%, rgba(250,247,242,0.1) 100%);
+}
+.hero-conteudo {
+  position: relative;
+  max-width: 480px;
+  padding: 3rem 1.5rem 3rem 8%;
+}
+.hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dourado); margin-bottom: 1rem; }
+.hero-titulo { font-family: var(--fonte-display); font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: normal; line-height: 1.1; margin-bottom: 1rem; }
+.hero-titulo em { font-style: italic; color: var(--dourado); }
+.hero-descricao { color: var(--texto-suave); margin-bottom: 2rem; }
+
+/* BOTÃO */
+.botao-principal {
+  display: inline-block;
+  background: var(--dourado);
+  color: white;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+.botao-principal:hover { background: #8b6b2e; color: white; }
+
+/* SEÇÕES */
+.secao { padding: 5rem 1.5rem; }
+.secao-clara { background: var(--fundo-claro); }
+.container { max-width: 1100px; margin: 0 auto; }
+.container-estreito { max-width: 640px; margin: 0 auto; }
+.titulo-secao { font-family: var(--fonte-display); font-size: 2rem; font-weight: normal; margin-bottom: 1.25rem; }
+.texto-corpo { color: var(--texto-suave); line-height: 1.8; }
+
+/* CARDS DE PRODUTO */
+.card-produto {
+  border: 1px solid var(--borda);
+  background: white;
+  overflow: hidden;
+}
+.card-produto-imagem { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+.card-produto-info { padding: 0.85rem 1rem; }
+.card-nome { font-size: 0.85rem; color: var(--texto); margin-bottom: 0.2rem; }
+.card-preco { font-family: var(--fonte-display); font-size: 1rem; color: var(--dourado); }
+
+/* FORMULÁRIO */
+.formulario { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.5rem; }
+.rotulo { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-suave); margin-top: 0.75rem; }
+.campo {
+  width: 100%;
+  border: 1px solid var(--borda);
+  padding: 0.8rem 1rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--texto);
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.campo:focus { border-color: var(--dourado); }
+.campo.invalido { border-color: #c0392b; }
+.campo-area { resize: vertical; min-height: 110px; }
+.mensagem-sucesso { margin-top: 1rem; padding: 0.85rem; background: #f0faf0; border: 1px solid #b8ddb8; color: #2d6a2d; font-size: 0.85rem; }
+
+/* RODAPÉ */
+.rodape {
+  background: var(--texto);
+  color: rgba(255,255,255,0.55);
+  padding: 3rem 1.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.rodape .logo-use { color: rgba(255,255,255,0.4); }
+.rodape .logo-melia { color: white; }
+.rodape-links { display: flex; gap: 1.25rem; justify-content: center; margin: 1rem 0; font-size: 1.1rem; }
+.rodape-links a { color: rgba(255,255,255,0.55); transition: color 0.2s; }
+.rodape-links a:hover { color: var(--dourado); }
+.rodape-copy { margin-top: 1.5rem; font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+/* RESPONSIVIDADE */
+@media (max-width: 640px) {
+  nav { display: none; }
+  .hero-conteudo { padding: 3rem 1.5rem; }
+  .secao { padding: 3.5rem 1.5rem; }
+}
+
+/* FOCO VISÍVEL */
+:focus-visible { outline: 2px solid var(--dourado); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+  html { scroll-behavior: auto; }
+}
