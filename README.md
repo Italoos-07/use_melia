@@ -69,8 +69,8 @@ O Bootstrap foi usado apenas nessa seção; todo o restante do layout foi feito 
 
 ## Links
 
-- Link do repositório: _(a preencher após publicação)_
-- Link do site publicado: _(a preencher após GitHub Pages)_
+- Link do repositório: https://github.com/Italoos-07/use_melia.git
+- Link do site publicado: https://italoos-07.github.io/use_melia/
 
 ## Contribuição dos integrantes
 
