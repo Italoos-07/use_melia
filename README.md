@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Use Meliá
 
 ## Integrantes da dupla
@@ -75,3 +76,4 @@ O Bootstrap foi usado apenas nessa seção; todo o restante do layout foi feito 
 
 - **Gabriel Pereira Leal:** estrutura HTML, semântica e organização de arquivos
 - **Ítalo Dos Santos Ribeiro:** CSS, responsividade, JavaScript e documentação
+
