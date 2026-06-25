@@ -52,7 +52,7 @@ nav { display: flex; gap: 2rem; }
 /* HERO */
 .hero {
   min-height: 85vh;
-  background: #e8ddd0 url(img/top_preto.jpeg) center/cover no-repeat;
+  background: #e8ddd0 url(../img/top_preto.jpeg) center/cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
